@@ -1,5 +1,14 @@
 # AlgorithmsAndDataStructures
 
+## Sliding Window
+
+When to use:
+* If we need result over a sequence of data( subarray, substring)
+* When we need to stop when a condition is met ( sum is K, or K distict character)
+
+Sample Problems:
+* Longest substring containing k disticnt character
+* Longest subarray with sum K 
 
 
 ## Graph Traversal Algorithms
