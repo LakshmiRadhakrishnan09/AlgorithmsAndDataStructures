@@ -1,0 +1,55 @@
+Heaps
+
+- a binary tree
+- a complete tree(filled left to right)
+- parent nodes must either be greater than or equal to the value of its children nodes(MAX HEAP), or less than or equal to the value of its children nodes(MIN HEAP)
+- unlike binary search trees, the left node does not have to be smaller than the right node
+
+Adding a  node
+
+- we can only add to left most available spot
+- swap with parent if new item is greater than parent(in case of max heap)
+
+Removing root node
+
+- move the left most last node as root
+- swap with child(largest among child) till the node is at correct place(nolonger swaps)
+
+How to implement heaps?
+
+as linked list (common way for trees) or as arrays(more space efficient as pointers need not be stored and allows bit operations to get the child or parent).
+
+if an array
+if parent is i,
+left child is 2i+1
+right child is 2i+2
+
+if node is n, parent is floor(n-1)/2.
+
+Where is it used?
+
+- Priority Queues : the highest priority element is the root. O(1) complexity.
+
+- Finding k largest element
+
+Finding k largest element
+
+Naive approach: sort and select k elements .O (n log n)
+Best solution : use min heap.
+
+Given array of n integers.
+
+Create a new min-heap to store the K largest elements.
+Insert the first K elements from the array into the min-heap.
+Iterate through the remaining elements of the array.
+If the current element is larger than the minimum element in the min-heap(root), remove the minimum element(root) and insert the current element.
+Create a vector to store the K largest elements in decreasing order.
+Pop the elements from the min-heap and store them in reverse order in the vector.
+Return the vector containing the K largest elements.
+
+time complexity is O(n log k). Significant performance when k is smaller than n.
+
+note: to find k largest element use a min heap. not a max heap!!
+
+
+
