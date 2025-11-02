@@ -1,0 +1,21 @@
+Sorting
+
+Bubble Sort ( ascending)
+
+- compare adjacent elements and swap if first is greater.
+- by the end of first iteration, greatest element will be the last item.
+- repeat for n-1 items
+
+Selection Sort ( ascending)
+
+- set first element as minimum
+- compare with each item in list
+- update minimum
+- at the end of first iteration, minimum will have lowest value
+- swap with position 0
+- repeat
+
+Insertion Sort ( ascending)
+
+- pick each item
+- compare with all other items, place it at correct position
